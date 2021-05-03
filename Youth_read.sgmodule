@@ -1,0 +1,16 @@
+#!name= 中青极速body获取
+#!desc=该模块适用于获取任务Cookie，仅集成Sunert签到任务Cookie。您可以在使用后手动将其禁用，以免产生不必要的MITM.。
+#!system=ios
+
+# GitHub主页(https://github.com/Sunert/Scripts)
+# TG聊天群 (https://t.me/EveryLucky)
+# 定时脚本
+
+[Script]
+# 中青极速body获取
+
+中青看点阅读 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/article\/info\/get\.json,script-path=https://raw.githubusercontent.com/Sunert/Script/master/Task/Youth_Read.js
+
+中青看点阅读 = type=http-request,pattern=https:\/\/ios\.baertt\.com\/v5\/user\/stay\.json,script-path=https://raw.githubusercontent.com/Sunert/Script/master/Task/Youth_Read.js, requires-body=true
+
+hostname = %APPEND% kd.youth.cn, ios.baertt.com
